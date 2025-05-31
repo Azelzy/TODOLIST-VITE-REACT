@@ -17,7 +17,7 @@ function App() {
     // Simulate loading time
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000); // 1 second
+    }, 1500); // 1 second
 
     return () => clearTimeout(timer);
   }, []); // Run only once on component mount
