@@ -3,7 +3,6 @@ import { ToastContainer, toast } from 'react-toastify'
 import { v4 as uuidv4 } from 'uuid'
 import TodoForm from './components/TodoForm'
 import TodoList from './components/TodoList'
-import Loader from './components/Loader'
 import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
@@ -17,7 +16,7 @@ function App() {
     // Simulate loading time
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500); // 1 second
+    }, 1200); // 1 second
 
     return () => clearTimeout(timer);
   }, []); // Run only once on component mount
@@ -70,7 +69,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Todo List</h1>
+      <h1>List Tugas</h1>
       <TodoForm addTodo={addTodo} />
       <TodoList
         todos={todos}

@@ -7,7 +7,7 @@ function TodoForm({ addTodo }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!inputValue.trim()) {
-      toast.error('Todo tidak boleh kosong!');
+      toast.error('isian tidak boleh kosong!');
       return;
     }
     addTodo(inputValue);
